@@ -13,6 +13,7 @@ WARNING 2
 Use of this library will require that you hack your dnode installation.  Yikes!  Yes, it's true, I've chosen the XMLSocket class for communications with dnode, however, dnode-protocol is a '\n' (newline) delimited protocol, and XMLSocket requires a '\0' terminator in order for the proper data event to fire in actionscript.  In similar fashion, dnode-protocol has to be hacked to strip the '\0' character or the JSON parser gets mad.  I will fix this in the next version to use the Socket class.
 
 
+You've been warned...
 
 TODO
 ===
@@ -28,7 +29,7 @@ TODO
 License - MIT
 ===
 
-Copyright (c) 2012 Aaron Fay
+Copyright (c) 2012 Aaron Fay - http://aaronfay.ca/
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
